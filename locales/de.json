@@ -1,0 +1,13 @@
+{
+    "interaction_cooldown": "AntiSpam: Bitte warte ein bisschen.",
+    "inventory_full": "Das Inventar ist voll.",
+    "identification_missing": "Du brauchst einen Ausweis!",
+    "money": "Bargeld",
+    "not_enough_money": "Du hast nicht genügend Geld (**%s** | **$%s fehlend**)",
+    "cityhall_request_identity_card": "Ausweis beantragen",
+    "cityhall_identity_card_already_requested": "Sie haben bereits einen Ausweis ausgestellt bekommen.",
+    "cityhall_identity_card_received": "Sie haben Ihren Personalausweis erhalten.",
+    "statebank_request_bank_card": "Bankkarte beantragen",
+    "statebank_request_bank_card_alert_header": "Bankkarte beantragen **(Preis: $%s)**",
+    "statebank_request_bank_card_alert_content": "Guten Abend **%s**,  \nSind Sie sich sicher, dass Sie eine Bankkarte beantragen möchten? Sie können mehrere Bankkarten besitzen.  \nDie Bankkarte kostet sie einmalig **$%s**."
+}
