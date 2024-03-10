@@ -1,7 +1,7 @@
 return {
     {
         sprite = 419, colour = 0, name = 'Rathaus von Los Santos',
-        pos = vec4(-545.1, -204.2, 37.2, 210.8), model = 'cs_fbisuit_01', scenario = 'WORLD_HUMAN_CLIPBOARD',
+        pos = vec4(-549.9531, -190.1347, 37.2231, 181.2739), model = 'cs_fbisuit_01', scenario = 'WORLD_HUMAN_CLIPBOARD',
         state = 'Los Santos', itemName = 'identity_card'
     },
     {

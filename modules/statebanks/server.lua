@@ -27,6 +27,8 @@ lib.callback.register('sav:statebanks:server:requestBankCard', function (source,
 
     xPlayer.removeMoney(bankCard.price)
     exports.ox_inventory:AddItem(playerId, bankCard.itemName, 1, metadata)
+
+    -- TODO: SQL
     return true, locale('state_bank_bank_card_successfully_purchased')
 end)
 

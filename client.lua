@@ -62,3 +62,4 @@ end
 require 'modules.cityhall.client'
 require 'modules.statebanks.client'
 require 'modules.elevator.client'
+require 'modules.DEVELOPER.client'
