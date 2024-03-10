@@ -4,6 +4,7 @@ return {
         sprite = 207, colour = 5, name = 'Staatsbank von Los Santos',
         model = 'cs_bankman', scenario = 'WORLD_HUMAN_GUARD_STAND',
         bankCard = {
+            itemName = 'bank_card',
             price = 1000
         }
     }

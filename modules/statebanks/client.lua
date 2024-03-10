@@ -12,13 +12,12 @@ local function requestBankCard(statebank)
         content = locale('statebank_request_bank_card_alert_content', LocalPlayer.state.name, statebank.bankCard.price),
         centered = true,
         cancel = true,
-        size ='xl',
+        size = 'xl',
     })
 
     if alert == 'cancel' then return end
 
     local success, message = lib.callback.await('sav:statebanks:server:requestBankCard', false, identificationData, statebank.bankCard)
-    print('success', success, message)
     lib.notify({
         description = message,
         type = success and 'success' or 'error'
