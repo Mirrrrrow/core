@@ -12,5 +12,8 @@
     "statebank_request_bank_card_alert_content": "Guten Abend **%s**,  \nSind Sie sich sicher, dass Sie eine Bankkarte beantragen möchten? Sie können mehrere Bankkarten besitzen.  \nDie Bankkarte kostet sie einmalig **$%s**.",
     "state_bank_bank_card_successfully_purchased": "Sie haben erfolgreich eine Bankkarte erhalten. Bitte merken Sie sich ihre PIN.",
     "state_bank_pin_already_removed": "Die PIN wurde bereits von der Bankkarte entfernt.",
-    "state_bank_pin_removed": "Die PIN wurde erfolgreich von der Bankkarte entfernt. Hoffentlich haben Sie sich die PIN gemerkt."
+    "state_bank_pin_removed": "Die PIN wurde erfolgreich von der Bankkarte entfernt. Hoffentlich haben Sie sich die PIN gemerkt.",
+    "iaa_person_request_target": "Bürger von San Andreas",
+    "iaa_person_control": "IAA | Personenübersicht",
+    "iaa_person_control_list_persons": "Personenliste"
 }
