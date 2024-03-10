@@ -1,4 +1,5 @@
 {
+    "menu_back": "Zurück",
     "interaction_cooldown": "AntiSpam: Bitte warte ein bisschen.",
     "inventory_full": "Das Inventar ist voll.",
     "identification_missing": "Du brauchst einen Ausweis!",
@@ -10,10 +11,17 @@
     "statebank_request_bank_card": "Bankkarte beantragen",
     "statebank_request_bank_card_alert_header": "Bankkarte beantragen **(Preis: $%s)**",
     "statebank_request_bank_card_alert_content": "Guten Abend **%s**,  \nSind Sie sich sicher, dass Sie eine Bankkarte beantragen möchten? Sie können mehrere Bankkarten besitzen.  \nDie Bankkarte kostet sie einmalig **$%s**.",
-    "state_bank_bank_card_successfully_purchased": "Sie haben erfolgreich eine Bankkarte erhalten. Bitte merken Sie sich ihre PIN.",
-    "state_bank_pin_already_removed": "Die PIN wurde bereits von der Bankkarte entfernt.",
-    "state_bank_pin_removed": "Die PIN wurde erfolgreich von der Bankkarte entfernt. Hoffentlich haben Sie sich die PIN gemerkt.",
-    "iaa_person_request_target": "Bürger von San Andreas",
-    "iaa_person_control": "IAA | Personenübersicht",
-    "iaa_person_control_list_persons": "Personenliste"
+    "statebank_bank_card_successfully_purchased": "Sie haben erfolgreich eine Bankkarte erhalten. Bitte merken Sie sich ihre PIN.",
+    "statebank_pin_already_removed": "Die PIN wurde bereits von der Bankkarte entfernt.",
+    "statebank_pin_removed": "Die PIN wurde erfolgreich von der Bankkarte entfernt. Hoffentlich haben Sie sich die PIN gemerkt.",
+    "statebank_manage_cards": "Bankkarten verwalten",
+    "statebank_manage_card": "Karte **%s**",
+    "statebank_manage_card_input_header": "Karte %s",
+    "statebank_card_change_pin": "PIN ändern",
+    "statebank_card_change_pin_description": "Änderen Sie den 4-stelligen PIN ihrer Bankkarte.",
+    "statebank_card_lock_card": "Karte sperren",
+    "statebank_card_lock_card_description": "Sperren Sie ihre Bankkarte. Sie können die Karte jederzeit wieder entsperren.",
+    "statebank_card_pin_input_label": "PIN",
+    "statebank_card_pin_input_description": "Bitte geben Sie ihre 4-stellige PIN ein.",
+    "statebank_card_pin_changed": "Ihre PIN wurde erfolgreich geändert."
 }
