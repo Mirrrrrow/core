@@ -107,27 +107,29 @@ local function manageCards()
     lib.showContext('statebank_manage_cards')
 end
 
-for _, statebank in pairs(lib.load('data.statebanks')) do
-    local ped = Client.spawnPed(statebank.model, statebank.pos, statebank.scenario)
-    local _ = Client.createBlip(statebank.sprite, .69, statebank.colour, statebank.name, statebank.pos)
-
-    exports.ox_target:addLocalEntity(ped --[[@as number]], {
-        {
-            label = locale('statebank_request_bank_card'),
-            icon = 'fas fa-credit-card',
-            onSelect = function ()
-                requestBankCard(statebank)
-            end
-        },
-        {
-            label = locale('statebank_manage_cards'),
-            icon = 'fas fa-credit-card',
-            onSelect = function ()
-                manageCards()
-            end
-        }
-    })
-end
+CreateThread(function ()
+    for _, statebank in pairs(lib.load('data.statebanks')) do
+        local ped = Client.spawnPed(statebank.model, statebank.pos, statebank.scenario)
+        local _ = Client.createBlip(statebank.sprite, .69, statebank.colour, statebank.name, statebank.pos)
+    
+        exports.ox_target:addLocalEntity(ped --[[@as number]], {
+            {
+                label = locale('statebank_request_bank_card'),
+                icon = 'fas fa-credit-card',
+                onSelect = function ()
+                    requestBankCard(statebank)
+                end
+            },
+            {
+                label = locale('statebank_manage_cards'),
+                icon = 'fas fa-credit-card',
+                onSelect = function ()
+                    manageCards()
+                end
+            }
+        })
+    end
+end)
 
 AddEventHandler('sav:statebank:client:manageCards', function ()
     manageCards()

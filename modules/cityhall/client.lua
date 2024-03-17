@@ -18,15 +18,17 @@ local function requestIdentityCard(cityhall)
     Client.cooldown.lastInteracted = 1000
 end
 
-for _, cityhall in pairs(lib.load('data.cityhalls')) do
-    local ped = Client.spawnPed(cityhall.model, cityhall.pos, cityhall.scenario)
-    local _ = Client.createBlip(cityhall.sprite, .69, cityhall.colour, cityhall.name, cityhall.pos)
-
-    exports.ox_target:addLocalEntity(ped --[[@as number]], {
-        label = locale('cityhall_request_identity_card'),
-        icon = 'fas fa-id-card-alt',
-        onSelect = function ()
-            requestIdentityCard(cityhall)
-        end
-    })
-end
+CreateThread(function ()
+    for _, cityhall in pairs(lib.load('data.cityhalls')) do
+        local ped = Client.spawnPed(cityhall.model, cityhall.pos, cityhall.scenario)
+        local _ = Client.createBlip(cityhall.sprite, .69, cityhall.colour, cityhall.name, cityhall.pos)
+    
+        exports.ox_target:addLocalEntity(ped --[[@as number]], {
+            label = locale('cityhall_request_identity_card'),
+            icon = 'fas fa-id-card-alt',
+            onSelect = function ()
+                requestIdentityCard(cityhall)
+            end
+        })
+    end
+end)
