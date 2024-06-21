@@ -1,4 +1,3 @@
--- TODO: SQL FOR ADD JOB iaa AND GRADES
 ALTER TABLE users ADD COLUMN IF NOT EXISTS has_identity_card boolean DEFAULT false;
 
 CREATE TABLE IF NOT EXISTS bank_cards (
